@@ -7,6 +7,17 @@ if (yearNode) {
 
 const toast = document.getElementById("toast");
 const copyButton = document.querySelector("[data-copy-email]");
+const languageButtons = document.querySelectorAll(".lang-btn[data-lang]");
+
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    try {
+      localStorage.setItem("bgdt-lang", button.getAttribute("data-lang") || "vi");
+    } catch {
+      // Ignore storage issues in restricted browser modes.
+    }
+  });
+});
 
 const showToast = (message) => {
   if (!toast) return;
