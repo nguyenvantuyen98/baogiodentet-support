@@ -1,4 +1,4 @@
-const SUPPORT_EMAIL = "nguyenvantuyen98nd@gmail.com";
+const SUPPORT_EMAIL = "ben.nguyenvn18@gmail.com";
 
 const yearNode = document.getElementById("current-year");
 if (yearNode) {
