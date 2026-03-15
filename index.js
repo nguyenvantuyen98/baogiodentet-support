@@ -18,12 +18,15 @@ const showToast = (message) => {
 };
 
 if (copyButton) {
+  const successMessage = copyButton.getAttribute("data-copy-success") || "Email copied";
+  const failMessage = copyButton.getAttribute("data-copy-fail") || "Cannot copy email. Please copy manually.";
+
   copyButton.addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText(SUPPORT_EMAIL);
-      showToast("Da sao chep email ho tro");
+      showToast(successMessage);
     } catch {
-      showToast("Khong the sao chep. Vui long copy thu cong");
+      showToast(failMessage);
     }
   });
 }
