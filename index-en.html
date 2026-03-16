@@ -444,100 +444,104 @@
       <h2>Frequently asked questions</h2>
       <div class="faq">
         <details>
-          <summary>How do I open the customization menu?</summary>
-          <p>Please long-press on the countdown screen. The customization menu will slide up from the bottom.</p>
+          <summary>Where do I open countdown settings?</summary>
+          <p>Tap the screen to show the gear button, then tap that button to open the settings page.</p>
         </details>
         <details>
-          <summary>Why does tapping the screen not show the menu?</summary>
-          <p>This screen uses long-press, not single tap. Hold your finger for about 0.5-1 second.</p>
+          <summary>Why does the gear button disappear?</summary>
+          <p>The button auto-hides after about 3 seconds. Just tap the screen again to show it.</p>
         </details>
         <details>
-          <summary>Where can I change the background?</summary>
+          <summary>How do I change the background?</summary>
           <ul class="faq-list">
-            <li>Long-press on the screen.</li>
-            <li>Select <strong>Change background</strong>.</li>
-            <li>Swipe left/right to preview templates.</li>
-            <li>Tap <strong>Save</strong>.</li>
+            <li>Open the <strong>Background</strong> tab.</li>
+            <li>Swipe left/right or tap the left/right arrows to switch templates.</li>
           </ul>
         </details>
         <details>
-          <summary>What does "Choose format" mean?</summary>
-          <p>It controls how remaining time is displayed. You can choose:</p>
+          <summary>Where can I change countdown display format?</summary>
+          <p>Open the <strong>Count Style</strong> tab and choose:</p>
           <ul class="faq-list">
-            <li>Remaining X days ...</li>
-            <li>Remaining X weeks Y days ...</li>
-            <li>Remaining X months Y days ...</li>
+            <li>By day</li>
+            <li>By week + day</li>
+            <li>By month + day</li>
           </ul>
         </details>
         <details>
-          <summary>Why does the "month" value sometimes differ from calendar months?</summary>
-          <p>In the app, month format currently uses a fixed 30-days-per-month rule for faster display. So it may differ slightly from real calendar months.</p>
+          <summary>Why can the “month” value differ from calendar intuition?</summary>
+          <p>Because in code, month is currently converted as 30 days per month for quick display.</p>
         </details>
         <details>
-          <summary>How do I turn hour and minute display on/off?</summary>
-          <p>Long-press on the screen, then toggle <strong>Show hour, minute</strong> in the menu.</p>
+          <summary>How do I change text effects?</summary>
+          <p>Open the <strong>Text Effects</strong> tab and swipe or tap arrows to choose a style.</p>
         </details>
         <details>
-          <summary>Is the blinking colon between hour and minute a bug?</summary>
-          <p>No. This is an intentional visual effect synchronized with time rhythm.</p>
+          <summary>Where do I adjust font size?</summary>
+          <p>Open the <strong>Font Size</strong> tab and drag the slider. Current range is 0.5 to 2.0.</p>
         </details>
         <details>
-          <summary>How do I change font style and size?</summary>
-          <p>Long-press on the screen, choose <strong>Font style</strong> or <strong>Font size</strong>, swipe to preview, then tap <strong>Save</strong>.</p>
+          <summary>Where do I adjust countdown line position?</summary>
+          <p>Open the <strong>Text Position</strong> tab and drag the slider. You can move text up or down as needed.</p>
         </details>
         <details>
-          <summary>I finished swiping options. How do I apply changes?</summary>
-          <p>Tap <strong>Save</strong> (top-right corner). If you tap <strong>Cancel</strong>, current settings remain unchanged.</p>
+          <summary>How do I turn hour & minute display on/off?</summary>
+          <p>Open the <strong>Hour & Minute</strong> tab to switch between on and off.</p>
         </details>
         <details>
-          <summary>Will my customization settings be lost after closing the app?</summary>
-          <p>No. Customizations (background, style, format, font size, hour-minute) are saved locally and kept when reopening the app.</p>
+          <summary>Why is the colon between hour and minute blinking?</summary>
+          <p>This is an intentional effect synchronized with each second.</p>
         </details>
         <details>
-          <summary>What date does the app count down to?</summary>
-          <p>The app counts down to the next Lunar New Year date from the built-in Tet date list.</p>
+          <summary>Where do I change app language?</summary>
+          <p>Open the <strong>Language</strong> tab and choose Tiếng Việt or English.</p>
         </details>
         <details>
-          <summary>Do I need internet for the app to work?</summary>
-          <p>Usually no internet is required for core countdown features, because the app uses system time and built-in date data.</p>
-        </details>
-        <details>
-          <summary>How do I add a widget to iPhone home screen? (iOS)</summary>
+          <summary>Are settings auto-saved?</summary>
+          <p>Yes, with the new mechanism:</p>
           <ul class="faq-list">
-            <li>Long-press an empty area on the Home Screen.</li>
-            <li>Select <strong>Edit</strong> then <strong>Add Widget</strong>.</li>
-            <li>Find the app.</li>
-            <li>Choose a widget style and tap <strong>Add Widget</strong>.</li>
-            <li>Tap <strong>Done</strong> to finish.</li>
+            <li>When you switch tabs: previous tab is saved (if there are changes).</li>
+            <li><strong>Revert</strong> button: restores current tab to its saved state.</li>
+            <li><strong>Done</strong> button: saves current tab and exits.</li>
+            <li>System Back button: discards unsaved changes of current tab and exits.</li>
           </ul>
         </details>
         <details>
-          <summary>How do I add a widget on Android home screen?</summary>
+          <summary>When does the app show “Happy New Year!”?</summary>
+          <p>When remaining days &lt;= 0. If hour/minute is enabled, it shows 00h : 00p (or 00h : 00m in English).</p>
+        </details>
+        <details>
+          <summary>Does the app need internet to run countdown?</summary>
+          <p>Internet is not required for core countdown logic; the app uses built-in Tet date data and device time.</p>
+        </details>
+        <details>
+          <summary>How do I add widgets on iOS?</summary>
+          <p>iOS: go to Home Screen, long-press background until icons jiggle, choose Edit → Add Widget → select widget → Add Widget → Done.</p>
+        </details>
+        <details>
+          <summary>How do I add widgets on Android?</summary>
+          <p>Android: long-press empty Home Screen area → Widgets → choose app → long-press widget and drag to screen.</p>
+        </details>
+        <details>
+          <summary>How do I resize/remove widgets?</summary>
           <ul class="faq-list">
-            <li>Long-press an empty area on the home screen.</li>
-            <li>Select <strong>Widgets</strong>.</li>
-            <li>Find the app.</li>
-            <li>Long-press the widget and drag it to your desired position.</li>
+            <li>Android: long-press widget to resize, or drag to Remove area to delete.</li>
+            <li>iOS: long-press widget to edit/rearrange; remove widget from context menu.</li>
           </ul>
         </details>
         <details>
-          <summary>How do I remove a widget?</summary>
+          <summary>Why does the widget not update in real-time every second?</summary>
+          <p>Widgets are always limited by operating system policies:</p>
           <ul class="faq-list">
-            <li>iOS: Long-press the widget, then select <strong>Remove Widget</strong>.</li>
-            <li>Android: Long-press the widget and drag it to <strong>Remove/Delete</strong> area (depends on device brand).</li>
+            <li>Android: <strong>updatePeriodMillis</strong> does not support less than 30 minutes (for periodic updates).</li>
+            <li>iOS: <strong>WidgetKit</strong> uses timeline/scheduling; extension does not run continuously like the app screen.</li>
           </ul>
         </details>
         <details>
-          <summary>Can I resize widgets?</summary>
+          <summary>Where do I open system App Settings?</summary>
           <ul class="faq-list">
-            <li>Android: most launchers allow resize handles.</li>
-            <li>iOS: usually you need to re-add the widget using a different size.</li>
+            <li>iOS: Settings → Apps → choose the app.</li>
+            <li>Android: Settings → Apps → choose the app → Permissions.</li>
           </ul>
-        </details>
-        <details>
-          <summary>Why does the widget not update every second?</summary>
-          <p>This is a normal operating system limitation to save battery and resources. Widgets usually refresh on system schedule, not real-time like the main app screen.</p>
-          <p class="faq-note">Note: widget refresh frequency can vary by device model and OS version.</p>
         </details>
       </div>
     </section>
